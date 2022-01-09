@@ -29,7 +29,7 @@ const { color, bgcolor } = require('./lib/color')
 const { y2mateA, y2mateV } = require('./lib/y2mate')
 const { fetchJson, fetchText } = require('./lib/fetcher')
 const ffmpeg = require('fluent-ffmpeg')
-const { removeBackgroundFromImageFile } = require('remove.bg')
+
 const { getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require("./lib/functions");
 
 //Database
