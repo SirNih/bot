@@ -9,7 +9,7 @@ const { color, bgcolor } = require('./lib/color')
 const fs = require("fs-extra")
 const simple = require('./lib/simple.js')
 const WAConnection = simple.WAConnection(_WAConnection)
-const figlet = require('figlet')
+
 const { getBuffer, info, start, success} = require('./lib/functions')
 const moment = require("moment-timezone")
 const gcdetect = JSON.parse(fs.readFileSync('./storage/gcdetect.json'))
