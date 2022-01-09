@@ -136,7 +136,7 @@ const starts = async (LexxyOFC = new WAConnection()) => {
 	LexxyOFC.logger.level = 'warn'
 	LexxyOFC.version = [2, 2140, 12]
 	console.log(color(`\x1b[1;37m> ${tampilUcapan}\n`,'cyan'))
-	console.log(color(figlet.textSync('New Base', {
+	{
 		font: 'Standard',
 		horizontalLayout: 'default',
 		vertivalLayout: 'default',
