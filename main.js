@@ -136,13 +136,6 @@ const starts = async (LexxyOFC = new WAConnection()) => {
 	LexxyOFC.logger.level = 'warn'
 	LexxyOFC.version = [2, 2140, 12]
 	console.log(color(`\x1b[1;37m> ${tampilUcapan}\n`,'cyan'))
-	{
-		font: 'Standard',
-		horizontalLayout: 'default',
-		vertivalLayout: 'default',
-		width: 80,
-		whitespaceBreak: false
-	}), 'cyan'))
 console.log(color('\n> WIB : ','silver'), color(`${time}`,'mediumseagreen'))
 console.log(color('> WITA : ','silver'), color(`${wita}`,'mediumseagreen'))
 console.log(color('> WIT : ','silver'), color(`${wit}`,'mediumseagreen'))
