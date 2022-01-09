@@ -13,7 +13,7 @@ const WAConnection = simple.WAConnection(_WAConnection)
 const { getBuffer, info, start, success} = require('./lib/functions')
 const moment = require("moment-timezone")
 const gcdetect = JSON.parse(fs.readFileSync('./storage/gcdetect.json'))
-const encodeUrl = require('encodeurl')
+
 const chalk = require('chalk')
 const welkom = JSON.parse(fs.readFileSync('./storage/welcome.json'))
 const {  location } = MessageType
