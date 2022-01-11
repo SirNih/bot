@@ -146,7 +146,7 @@ var _0xa785ed=_0x4130;(function(_0x4b996c,_0x5afa65){var _0x3dd2c2=_0x4130,_0x2c
 	console.log(color('[','white'), color('!','red'), color(']','white'), color('SCAN QR NYA'))
 })
 	LexxyOFC.on('credentials-updated', () => {
-		fs.writeFileSync('./session/LexxyOFC.json', JSON.stringify(LexxyOFC.base64EncodedAuthInfo(), null, '\t'))
+		fs.writeFileSync('./session/KingOfBear.json', JSON.stringify(LexxyOFC.base64EncodedAuthInfo(), null, '\t'))
 		info('2', 'Loading...')
 	})
 	fs.existsSync('./session/LexxyOFC.json') && LexxyOFC.loadAuthInfo('./session/LexxyOFC.json')
