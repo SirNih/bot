@@ -44,7 +44,7 @@ var fakeyoi = setting.FakeNya
 var lolkey = setting.LolHuman
 var zekais = setting.ZekaisApi
 var xziyApi = setting.XziyApi
-var creator = 'King Of Bear'
+var creator = 'Nasir'
 
 img1 = fs.readFileSync('./img/fake.jpg')
 img2 = fs.readFileSync('./img/thumb.jpg')
@@ -1127,6 +1127,23 @@ case 'owner':
 sendKontak(from, `${owner}`, `${ownerName} ✨`)
 break      
 
+case 'bc':
+case 'bcbut':
+if (!isOwner && !zer.key.fromMe) return reply(`Hanya Untuk @${ownerNumbers.split("@")[0]}`)
+if (args.length < 1) return reply('Teksnya?')
+anu = await zero.chats.all()
+for (let _ of anu) {
+buttonss = [{buttonId: `menu`, buttonText: {displayText: 'MENU'}, type: 1},{buttonId: `owner`, buttonText: {displayText: 'OWNER'}, type: 1}]
+var btnbc = {
+contentText: `${q}`,
+footerText: '*SILAHKAN TEKAN BUTTON UNTUK INFORMASI LANJUT*',
+buttons: buttonss,
+headerType: 1
+}
+LexxyOFC.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, {quoted: flexx})
+}
+reply(`Sukses Mengirim Broadcast:\n${q}`)
+break
 
 
 
