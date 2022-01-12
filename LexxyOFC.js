@@ -529,7 +529,7 @@ await LexxyOFC.sendMessage(from, hh, MessageType.audio, {qouted: flexx, mimetype
 break
 case 'darkjoke':
 case 'meme':
-buff = await getBuffer(`https://api.lolhuman.xyz/api/meme/darkjoke?apikey=${apikey1}`)
+buff = await getBuffer(`https://api.lolhuman.xyz/api/meme/darkjoke?apikey=44331e566f11203b89e75428`)
 buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
 imageMsg = (await LexxyOFC.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
 buttonsMessage = {footerText:'©Created By King Of Bear', imageMessage: imageMsg,
