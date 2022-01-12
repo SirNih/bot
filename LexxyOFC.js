@@ -237,8 +237,8 @@ orderMessage: {
 itemCount : 169,
 status: 1,
 surface : 1,
-message: `©𝑩𝒚 𝙆𝙞𝙣𝙜 𝙊𝙛 𝘽𝙚𝙖𝙧`, 
-orderTitle: `©𝑩𝒚 𝙆𝙞𝙣𝙜 𝙊𝙛 𝘽𝙚𝙖𝙧`,
+message: `友Abyss Bot`, 
+orderTitle: `友Abyss Bot`,
 thumbnail: img2,
 sellerJid: '0@s.whatsapp.net' 
 }
