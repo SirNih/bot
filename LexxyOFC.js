@@ -2,6 +2,33 @@
 Jika Fitur Error Fix Sendiri / Apikey Nya Error
 */
 
+
+const sotoy = [
+        '🍊 : 🍒 : 🍐',
+        '🍒 : 🔔 : 🍊',
+        '🍇 : 🍇 : 🍐',   //Slot
+        '🍊 : 🍋 : 🔔', 
+        '🔔 : 🍒 : 🍐',
+        '🔔 : 🍒 : 🍊',
+        '🍊 : 🍋 : 🔔',        
+        '🍐 : 🍒 : 🍋',
+        '🍐 : 🍒 : 🍐',
+        '🍊 : 🍒 : 🍒',
+        '🔔 : 🔔 : 🍇',
+        '🍌 : 🍌 : 🔔',
+        '🍐 : 🔔 : 🔔',
+        '🍊 : 🍋 : 🍒',
+        '🍋 : 🍋 : 🍋 Win👑',
+        '🔔 : 🔔 : 🍇',
+        '🔔 : 🍇 : 🍇', 
+        '🔔 : 🍐 : 🔔',
+        '🍌 : 🍌 : 🍌 Win👑',
+        '🍓 : 🍓 : 🍓 Win👑',
+        '🤖 : 🤖 : 🤖 Win👑',
+        '🌾 : 🌱 : 🌾',
+        '⚡ : ⚡ : ⚡ Win👑',
+        ]
+        
 const {
 WAConnection,
 MessageType,
@@ -94,6 +121,7 @@ const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
 const conts = mek.key.fromMe ? LexxyOFC.user.jid : LexxyOFC.contacts[sender] || { notify: jid.replace(/@.+/, '') }
 const pushname = mek.key.fromMe ? LexxyOFC.user.name : conts.notify || conts.vname || conts.name || '-'
 const isButton = (type == 'buttonsResponseMessage') ? mek.message.buttonsResponseMessage.selectedButtonId : ''
+const isOwner = ownerNumber.includes(sender)
 		
 //Mess
 mess = {
@@ -224,7 +252,7 @@ var flexx = {
 		"extendedTextMessage": {
                  "text": `${fakeyoi}`,
                  "title": `${fakeyoi}`,
-                 'jpegThumbnail': fs.readFileSync("./img/fake.jpg"),
+                 'jpegThumbnail': fs.readFileSync("./img/thumb.jpg"),
                         }
 	                  } 
                      }   
@@ -330,7 +358,6 @@ LexxyOFC.chatRead(from, "read")
 switch (command) {
 case 'menu':
 tes =`𝐇𝐚𝐥𝐥𝐨 *${pushname}* 👋
-${jams}
 𝐉𝐚𝐧𝐠𝐚𝐧 𝐋𝐮𝐩𝐚 𝐁𝐚𝐡𝐚𝐠𝐢𝐚 𝐘𝐚
 
 [ 𝗜𝗡𝗙𝗢 𝗕𝗢𝗧 ]
@@ -430,7 +457,7 @@ tes2 =`╭─❒ ⌜ 𝙎𝙄𝙈𝙋𝙇𝙀 𝙈𝙀𝙉𝙐 ⌟ ❒
 ✪ ${prefix}𝘧𝘢𝘭𝘭𝘭𝘦𝘢𝘷𝘦𝘴 
 ✪ ${prefix}𝘧𝘭𝘢𝘮𝘮𝘪𝘯𝘨 
 ✪ ${prefix}𝘩𝘢𝘳𝘳𝘺𝘱𝘰𝘵𝘵𝘦𝘳 
-✪ ${prefix}𝘤𝘢𝘳𝘷𝘦𝘥𝘸𝘰𝘰𝘥 
+✪ ${prefix}𝘤𝘢??𝘷𝘦𝘥𝘸𝘰𝘰𝘥 
 ✪ ${prefix}𝘢𝘳𝘤𝘢𝘥𝘦8𝘣𝘪𝘵 
 ✪ ${prefix}𝘣𝘢𝘵𝘵𝘭𝘦𝘧𝘪𝘦𝘭𝘥4 
 ✪ ${prefix}𝘱𝘶𝘣𝘨 
@@ -1129,7 +1156,7 @@ break
 
 case 'bc':
 case 'bcbut':
-if (!isOwner && !zer.key.fromMe) return reply(`Hanya Untuk @${ownerNumbers.split("@")[0]}`)
+if (!isOwner) return reply(`Hanya Untuk Owner`)
 if (args.length < 1) return reply('Teksnya?')
 anu = await zero.chats.all()
 for (let _ of anu) {
