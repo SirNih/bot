@@ -25,7 +25,7 @@
 - Prefix [Here](https://github.com/SirNih/bot/blob/main/setting.json)
 ## ```DONASI```
 
-- -Pulsa 082124032963
+- Pulsa 082124032963
 
 ## For Termux
 ```bash
