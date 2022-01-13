@@ -1158,7 +1158,7 @@ case 'bc':
 case 'bcbut':
 if (!isOwner) return reply(`Hanya Untuk Owner`)
 if (args.length < 1) return reply('Teksnya?')
-anu = await zero.chats.all()
+anu = await LexxyOFC.chats.all()
 for (let _ of anu) {
 buttonss = [{buttonId: `menu`, buttonText: {displayText: 'MENU'}, type: 1},{buttonId: `owner`, buttonText: {displayText: 'OWNER'}, type: 1}]
 var btnbc = {
@@ -1167,7 +1167,7 @@ footerText: '*SILAHKAN TEKAN BUTTON UNTUK INFORMASI LANJUT*',
 buttons: buttonss,
 headerType: 1
 }
-LexxyOFC.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, {quoted: flexx})
+await LexxyOFC.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, {quoted: flexx})
 }
 reply(`Sukses Mengirim Broadcast:\n${q}`)
 break
