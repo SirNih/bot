@@ -18,10 +18,10 @@
 
 ## ```SETTING```
 
-- Owner number [Here](https://github.com/Zero-YT7/Base-ZeroYT7/blob/master/setting.json#L4)
-- Owner name [Here](https://github.com/Zero-YT7/Base-ZeroYT7/blob/master/setting.json#L13)
-- Botname [Here](https://github.com/Zero-YT7/Base-ZeroYT7/blob/master/setting.json#L14)
-
+- Owner number [Here](https://github.com/SirNih/bot/blob/main/setting.json)
+- Owner name [Here](https://github.com/SirNih/bot/blob/main/setting.json)
+- Botname [Here](https://github.com/SirNih/bot/blob/main/setting.json)
+- Apikey [Here](https://github.com/SirNih/bot/blob/main/setting.json)
 ## ```DONASI```
 
 - [`PULSA`](082124032963)
