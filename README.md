@@ -5,13 +5,9 @@
 
 <p align="center">
 
-- 👼 My name is Nasir
+- Oi Tod
+- Ini Script Bot
 
-- 🗣️ I am 18 years old 
-
-- 🔭 I am Not programmer
- 
-- 😎 I am like Wibu
 </p>
 
 ------
